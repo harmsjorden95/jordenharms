@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Event Calendar | Jorden Harms</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			/* Responsive Calendar Container */
+			.calendar-container {
+				max-width: 1000px;
+				margin: 0 auto;
+				border-radius: 12px;
+				overflow: hidden;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+				opacity: 0;
+				transition: opacity 0.8s ease-in-out;
+			}
+
+			.calendar-container iframe {
+				width: 100%;
+				height: 700px;
+				border: none;
+				display: block;
+			}
+
+			@media (max-width: 768px) {
+				.calendar-container iframe {
+					height: 500px;
+				}
+				h2 {
+					font-size: 1.4em;
+				}
+			}
+		</style>
+	</head>
+
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header / Banner -->
+			<section id="banner" style="background-image: url('images/banner.jpg'); background-size: cover; background-position: center;">
+				<div class="inner">
+					<header>
+						<h2>JORDEN HARMS</h2>
+					</header>
+					<p>Event <strong>Calendar</strong></p>
+					<footer>
+						<ul class="buttons stacked">
+							<li><a href="index.html" class="button fit scrolly">Back to Home</a></li>
+						</ul>
+					</footer>
+				</div>
+			</section>
+
+			<!-- Main -->
+			<article id="main">
+				<section class="wrapper style2 container special-alt" style="text-align:center;">
+					<header>
+						<h2><strong>Upcoming Shows & Events</strong></h2>
+					</header>
+
+					<!-- Responsive Google Calendar Embed -->
+					<div class="calendar-container" id="calendarBox">
+						<iframe 
+							src="https://calendar.google.com/calendar/embed?src=2f51de6d766f6091c1d07e8a91885cb1ae280f5ea081b74a218fa0e2a0a4934e%40group.calendar.google.com&ctz=America%2FDenver"
+							loading="lazy"
+							scrolling="no"
+							frameborder="0">
+						</iframe>
+					</div>
+
+					<p style="margin-top:1.5em;">
+						Follow <a href="https://linktr.ee/jordenharms" target="_blank">Linktree</a> or 
+						<a href="https://www.instagram.com/harmsjorden/" target="_blank">Instagram</a> 
+						for live updates.
+					</p>
+				</section>
+			</article>
+
+			<!-- CTA -->
+			<section id="cta">
+				<header>
+					<h2>Booking & <strong>Inquiries</strong></h2>
+					<p>Want to book a show or event? Get in touch below.</p>
+				</header>
+				<footer>
+					<ul class="buttons">
+						<li><a href="contact.html" class="button primary">Contact Me</a></li>
+						<li><a href="index.html" class="button">Home</a></li>
+					</ul>
+				</footer>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div style="text-align: center; line-height: 1.2;">
+					<strong>Contact & Booking Information</strong><br>
+					Jorden Harms<br>
+					+1 (402) 650-9389<br>
+					harmsjorden95@gmail.com
+				</div>
+				<p>
+					<ul class="copyright">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</p>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Optional: Fade in the calendar once it loads -->
+		<script>
+			const calendarBox = document.getElementById('calendarBox');
+			window.addEventListener('load', () => {
+				calendarBox.style.opacity = '1';
+			});
+		</script>
+	</body>
+</html>
